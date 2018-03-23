@@ -32,11 +32,15 @@ class Pages extends CI_Controller {
 	}
 
 	public function login(){
-		$data = array(
-			'title' => 'CL7CK - Log in'
-		);
-		$this->load->view('template/header', $data);
-		$this->load->view('pages/login');
-		$this->load->view('template/footer');
+		if(!$this->session->userdata('logged_user')){
+			$data = array(
+				'title' => 'CL7CK - Log in'
+			);
+			$this->load->view('template/header', $data);
+			$this->load->view('pages/login');
+			$this->load->view('template/footer');
+		}else{
+			redirect('/','refresh');
+		}
 	}
 }

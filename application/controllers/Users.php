@@ -25,11 +25,14 @@ class Users extends CI_Controller {
 		$this->load->model('users_model');
 		$user = $this->users_model->validate($form_data['email']);
 
-		if(password_verify($form_data['password'], $user['password']))
-			echo "Valid";
-		else
-			echo "Invalid";
-
+		if(password_verify($form_data['password'], $user['password'])){
+			$this->session->set_userdata('logged_user', $user);
+			redirect('/','refresh');
+		}
+		else{
+			$this->session->set_flashdata('incorrect', 'Incorrect email or password!');
+			redirect('/login','refresh');
+		}
 
 	}
 

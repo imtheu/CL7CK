@@ -16,8 +16,6 @@
 			background: url(<?php echo base_url() ?>assets/img/bg-clock.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: 0px -120px;
-			filter: blur(5%);
 			top: 0;
 			left: 0;
 		}

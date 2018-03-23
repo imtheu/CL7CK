@@ -4,6 +4,11 @@
 			<h1 class="">Login</h1>
 		</div>
 		<div class="card-body">
+		<?php if($this->session->flashdata('incorrect')) : ?>
+			<div class="alert alert-danger" role="alert">
+  				<?php echo $this->session->flashdata('incorrect'); ?>
+			</div>
+		<?php endif ?>
 			<form action="users/login" method="post" name="userinput">
 				<div class="form-group">
 					<label for="email">Email</label>
