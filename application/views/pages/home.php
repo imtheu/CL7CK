@@ -5,7 +5,7 @@
 		<p class="lead">No more procrastination. With Cl7ck you can finally organize your time.</p>
 		<p>It's awesome, it's open source, it's free!</p>
 		<p class="lead">
-			<a class="btn btn-primary btn-lg" href="#" role="button">Create an account</a>
+			<a class="btn btn-primary btn-lg" href="<?php echo base_url(); ?>signup" role="button">Create an account</a>
 		</p>
 	</div>
 </div>

@@ -44,11 +44,11 @@
 							<a class="nav-link" href="<?php echo base_url() ?>about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Github</a>
+							<a class="nav-link" href="https://github.com/imtheu/CL7CK">Github</a>
 						</li>
 					</ul>
 					<form class="my-2 my-lg-0">
-						<a class="btn btn-outline-light" href="#" role="button">Get started</a>
+						<a class="btn btn-outline-light" href="<?php echo base_url(); ?>login" role="button">Get started</a>
 					</form>
 				</div>
 			</div>
