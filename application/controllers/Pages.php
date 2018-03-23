@@ -22,16 +22,22 @@ class Pages extends CI_Controller {
 	}
 
 	public function signup(){
-		$data = array(
-			'title' => 'CL7CK - Sign up'
-		);
-		$this->load->view('template/header', $data);
-		$this->load->view('pages/signup');
-		$this->load->view('template/footer');
+
+		if(!$this->session->userdata('logged_user')){
+			$data = array(
+				'title' => 'CL7CK - Sign up'
+			);
+			$this->load->view('template/header', $data);
+			$this->load->view('pages/signup');
+			$this->load->view('template/footer');
+		}else{
+			redirect('/','refresh');
+		}
 
 	}
 
 	public function login(){
+		
 		if(!$this->session->userdata('logged_user')){
 			$data = array(
 				'title' => 'CL7CK - Log in'
