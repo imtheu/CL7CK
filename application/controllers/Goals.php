@@ -51,13 +51,22 @@ class Goals extends CI_Controller {
 
 	public function open(){
 		$this->load->model('goals_model');
+		$this->load->model('tasks_model');
+
 		$goal_data = $this->goals_model->get($this->uri->segment(3), $this->session->userdata('logged_user')['id']);
 
 		$header_data = array(
 			'title' => 'CL7CK: ' . $goal_data['name'],
 		);
+
+		$tasks_data = array(
+			'goal_id' => $this->uri->segment(3),
+			'tasks' => $this->tasks_model->getAll($this->uri->segment(3))
+		);
+
 		$this->load->view('template/app/header', $header_data);
 		$this->load->view('pages/app/goal', $goal_data);
+		$this->load->view('pages/app/tasks', $tasks_data);
 		$this->load->view('template/footer');
 	}
 

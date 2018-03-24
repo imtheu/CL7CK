@@ -1,13 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/* Page controller of the application */
+
 class App extends CI_Controller {
 
 	public function index()	{
 		$user_data = $this->session->userdata('logged_user');
 		$this->load->model('goals_model');
 		$goals = $this->goals_model->getAll($user_data['id']);
-
+		
 		$header_data = array(
 			'title' => 'CL7CK: Dashboard'
 		);
