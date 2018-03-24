@@ -19,7 +19,7 @@ To run CL7CK, you need to place the CL7CK files in your projects folder on your 
 
 ### Installing
 
-To configure the database, you can run the scripts below or run the database.sql script
+To configure the database, you can run the scripts below or run the [database.sql script](https://github.com/imtheu/CL7CK/blob/master/database.sql)
 
 #### Required database: Cl7ck
 
