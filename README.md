@@ -19,10 +19,13 @@ To run CL7CK, you need to place the CL7CK files in your projects folder on your 
 
 ### Installing
 
+To configure the database, you can run the scripts below or run the database.sql script
+
 #### Required database: Cl7ck
 
 ```
-CREATE DATABASE `Cl7ck`
+CREATE DATABASE `Cl7ck`;
+USE `Cl7ck`;
 ```
 
 #### Required tables
@@ -37,7 +40,7 @@ CREATE TABLE `users` (
  `password` varchar(255) NOT NULL,
  `signup_date` datetime NOT NULL,
  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 ```
 
 ##### Table goals
@@ -51,7 +54,7 @@ CREATE TABLE `goals` (
  `creation_date` datetime NOT NULL,
  `deadline_date` date NOT NULL,
  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 ```
 
 ##### Table tasks
@@ -67,7 +70,7 @@ CREATE TABLE `tasks` (
  `user_id` int(11) NOT NULL,
  `goal_id` int(11) NOT NULL,
  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 ```
 
 ## Built With
