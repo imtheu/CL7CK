@@ -16,6 +16,7 @@ class Goals_model extends CI_Model {
 
 	public function save($goal){
 		$this->db->insert('goals', $goal);
+		return $this->db->insert_id();
 	}
 
 	public function delete($id){

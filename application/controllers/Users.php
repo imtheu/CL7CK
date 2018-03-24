@@ -16,7 +16,10 @@ class Users extends CI_Controller {
 		);
 		
 		$this->load->model('users_model');
-		$this->users_model->save($user_data);
+		$user_id = $this->users_model->save($user_data);
+
+		$this->load->helper('create_default_goals');
+		create_default_goals($user_id);
 
 		$this->session->set_flashdata('registered', 'Successfully registered!');
 		redirect('/login','refresh');

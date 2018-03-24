@@ -5,6 +5,7 @@ class Users_model extends CI_Model{
 
 	public function save($user){
 		$this->db->insert("users", $user);
+		return $this->db->insert_id();
 	}
 
 	public function validate($email){

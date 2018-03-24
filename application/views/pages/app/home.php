@@ -1,5 +1,8 @@
 <div class="container mt-3 mb-5 text-center">
-	<span class="h3">Today is <?php echo $date; ?></span>
+	<span class="h4 text-muted">Hello <?php echo $user_name; ?>! :)</span>
+	<br />
+	<span class="h3 text-muted">Today is <?php echo $date; ?></span>
+	<br /><br />
 	<h1>My goals are</h1>
 	<div class="list-group w-35 text-left"> 
 

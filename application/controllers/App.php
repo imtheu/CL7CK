@@ -17,6 +17,7 @@ class App extends CI_Controller {
 		date_default_timezone_set('America/Sao_Paulo');
 		
 		$page_data = array(
+			'user_name' => $user_data['name'],
 			'date' => date('d/m/Y'),
 			'goals' => $goals
 		);
