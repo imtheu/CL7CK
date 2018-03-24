@@ -1,0 +1,13 @@
+body{
+	background: #fafafa;
+}
+.navbar{
+	height: 60px;
+}
+.jumbotron.with-bg{
+	background: url(../img/bg-clock.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+}
