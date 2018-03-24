@@ -17,6 +17,9 @@ class Users extends CI_Controller {
 		
 		$this->load->model('users_model');
 		$this->users_model->save($user_data);
+
+		$this->session->set_flashdata('registered', 'Successfully registered!');
+		redirect('/login','refresh');
 	}
 
 	public function login(){
@@ -27,13 +30,19 @@ class Users extends CI_Controller {
 
 		if(password_verify($form_data['password'], $user['password'])){
 			$this->session->set_userdata('logged_user', $user);
-			redirect('/','refresh');
+			redirect('/app','refresh');
 		}
 		else{
 			$this->session->set_flashdata('incorrect', 'Incorrect email or password!');
 			redirect('/login','refresh');
 		}
 
+	}
+
+	public function logout(){
+		$this->session->unset_userdata('logged_user');
+		$this->session->sess_destroy();
+		redirect('/login','refresh');
 	}
 
 }

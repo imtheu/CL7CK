@@ -3,7 +3,7 @@
 	<div class="container">
 		<h1 class="display-4">Reach your goals. Now.</h1>
 		<p class="lead">No more procrastination. With Cl7ck you can finally organize your time.</p>
-		<p>It's awesome, it's open source, it's free!</p>
+		<p>It's awesome, it's simple, it's open source, it's free!</p>
 		<p class="lead">
 			<a class="btn btn-primary btn-lg" href="<?php echo base_url(); ?>signup" role="button">Create an account</a>
 		</p>

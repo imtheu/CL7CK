@@ -31,13 +31,13 @@ class Pages extends CI_Controller {
 			$this->load->view('pages/signup');
 			$this->load->view('template/footer');
 		}else{
-			redirect('/','refresh');
+			redirect('/app','refresh');
 		}
 
 	}
 
 	public function login(){
-		
+
 		if(!$this->session->userdata('logged_user')){
 			$data = array(
 				'title' => 'CL7CK - Log in'
@@ -46,7 +46,8 @@ class Pages extends CI_Controller {
 			$this->load->view('pages/login');
 			$this->load->view('template/footer');
 		}else{
-			redirect('/','refresh');
+			redirect('/app','refresh');
 		}
 	}
+
 }
