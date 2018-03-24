@@ -12,12 +12,12 @@
 	<ul>
 		<li><a href="https://github.com/imtheu/CL7CK">Github repository</a>
 		<li><a href="https://github.com/imtheu">My Github</a></li>
-		<li><a href="">My Twitter</a></li>
-		<li><a href="">My Instagram</a></li>
-		<li><a href="">Codeigniter</a></li>
-		<li><a href="">Bootstrap</a></li>
-		<li><a href="">Unsplash</a></li>
-		<li>Photos by <a href=""> - </a> and <a href=""> - </a></li>
+		<li><a href="https://twitter.com/imtheu">My Twitter</a></li>
+		<li><a href="https://instagram.com/imtheu">My Instagram</a></li>
+		<li><a href="https://codeigniter.com/">Codeigniter</a></li>
+		<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+		<li><a href="https://unsplash.com/">Unsplash</a></li>
+		<li>Photos by <a href="https://unsplash.com/photos/tB4-ftQ4zyI">Wil Stewart</a> and <a href="https://unsplash.com/photos/dC6Pb2JdAqs">Fabian Grohs</a></li>
 	</ul>
 
 </div>
